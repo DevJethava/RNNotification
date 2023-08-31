@@ -37,7 +37,8 @@ function App(): JSX.Element {
     }, [])
 
     const getFCMToken = async () => {
-        PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+        if (Platform.OS === 'android')
+            PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
         const authStatus = await messaging().requestPermission();
         const enabled =
             authStatus === messaging.AuthorizationStatus.AUTHORIZED ||

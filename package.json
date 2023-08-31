@@ -7,7 +7,8 @@
     "ios": "react-native run-ios --simulator='iPhone 14'",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "ios-permission": "npx react-native setup-ios-permissions"
   },
   "dependencies": {
     "@notifee/react-native": "^7.8.0",
@@ -37,5 +38,8 @@
   },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "reactNativePermissionsIOS": [
+    "Notifications"
+  ]
 }
