@@ -1,0 +1,172 @@
+{
+  "project_info": {
+    "project_number": "247865696514",
+    "firebase_url": "https://drinkshop-b1511.firebaseio.com",
+    "project_id": "drinkshop-b1511",
+    "storage_bucket": "drinkshop-b1511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247865696514:android:fe701beeebe5e0f8b3e21b",
+        "android_client_info": {
+          "package_name": "com.app.devjethava.drinkshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247865696514-8k50cvtcgvbdsnon603vnr91dn6f4bq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.devjethava.drinkshop",
+            "certificate_hash": "258978376976912442c6f07388d257deca24d26e"
+          }
+        },
+        {
+          "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6e3D9-DyiV1jOMffFSyt3Atc9VIYtKW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247865696514:android:9521bc5373ca7941b3e21b",
+        "android_client_info": {
+          "package_name": "com.app.devjethava.drinkshopserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247865696514-6dsa1q5jgkefakudad1510op033hgg02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.devjethava.drinkshopserver",
+            "certificate_hash": "258978376976912442c6f07388d257deca24d26e"
+          }
+        },
+        {
+          "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6e3D9-DyiV1jOMffFSyt3Atc9VIYtKW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247865696514:android:cf083662ea353cfcb3e21b",
+        "android_client_info": {
+          "package_name": "com.devjethava.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6e3D9-DyiV1jOMffFSyt3Atc9VIYtKW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247865696514:android:b26831f6d305bdd9b3e21b",
+        "android_client_info": {
+          "package_name": "com.mathroda.dashcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6e3D9-DyiV1jOMffFSyt3Atc9VIYtKW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247865696514:android:a09c0acb0ab1d42ab3e21b",
+        "android_client_info": {
+          "package_name": "com.mathroda.dashcoin2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6e3D9-DyiV1jOMffFSyt3Atc9VIYtKW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247865696514-7qq3imt1i7lrs8k86gqn1bhudp80jp0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
