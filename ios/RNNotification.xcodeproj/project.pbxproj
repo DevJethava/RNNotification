@@ -14,7 +14,7 @@
 		4672945886F60039674A918D /* Pods_RNNotification_RNNotificationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88428973E239D9E26B41D64 /* Pods_RNNotification_RNNotificationTests.framework */; };
 		5388CCB34A5BCD7B6215C2C1 /* Pods_RNNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1051DC28A77D91E3640CC328 /* Pods_RNNotification.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E14F86EE2AA06517002744B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E14F86ED2AA06517002744B0 /* GoogleService-Info.plist */; };
+		E141ED8F2AA0CD4200BC5BF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E141ED8E2AA0CD4200BC5BF2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		5B7EB9410499542E8C5724F5 /* Pods-RNNotification-RNNotificationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNotification-RNNotificationTests.debug.xcconfig"; path = "Target Support Files/Pods-RNNotification-RNNotificationTests/Pods-RNNotification-RNNotificationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNNotification/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNNotification-RNNotificationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNNotification-RNNotificationTests.release.xcconfig"; path = "Target Support Files/Pods-RNNotification-RNNotificationTests/Pods-RNNotification-RNNotificationTests.release.xcconfig"; sourceTree = "<group>"; };
-		E14F86ED2AA06517002744B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E141ED8E2AA0CD4200BC5BF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E14F86EF2AA06A5D002744B0 /* RNNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RNNotification.entitlements; path = RNNotification/RNNotification.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F88428973E239D9E26B41D64 /* Pods_RNNotification_RNNotificationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNNotification_RNNotificationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 		13B07FAE1A68108700A75B9A /* RNNotification */ = {
 			isa = PBXGroup;
 			children = (
-				E14F86ED2AA06517002744B0 /* GoogleService-Info.plist */,
+				E141ED8E2AA0CD4200BC5BF2 /* GoogleService-Info.plist */,
 				E14F86EF2AA06A5D002744B0 /* RNNotification.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
@@ -248,7 +248,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				E14F86EE2AA06517002744B0 /* GoogleService-Info.plist in Resources */,
+				E141ED8F2AA0CD4200BC5BF2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
