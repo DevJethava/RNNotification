@@ -8,6 +8,7 @@
 import React, { useEffect } from 'react';
 import {
     Alert,
+    Button,
     PermissionsAndroid,
     Platform,
     SafeAreaView,
@@ -18,6 +19,7 @@ import {
 } from 'react-native';
 import messaging, { FirebaseMessagingTypes } from "@react-native-firebase/messaging";
 import notifee from '@notifee/react-native';
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 
 messaging().setBackgroundMessageHandler(async (remoteMessage) => {
     console.log('Message handled in the background!', remoteMessage.data);
@@ -75,6 +77,68 @@ function App(): JSX.Element {
         });
     }
 
+    async function onShowNotification() {
+        const channelId = await notifee.createChannel({
+            id: 'default',
+            name: 'Default Channel',
+        });
+
+        // Required for iOS
+        // See https://notifee.app/react-native/docs/ios/permissions
+        await notifee.requestPermission();
+
+        const notificationId = await notifee.displayNotification({
+            id: '123',
+            title: 'Test Notification',
+            body: 'This is Testing of Local Notification in Device.',
+            android: {
+                channelId,
+            },
+        });
+
+        // Show Badge count in iOS
+        // if (Platform.OS === 'ios') {
+        //     notifee.setBadgeCount(0).then(() => console.log('Badge count set!'));
+        // }
+
+        // Sometime later...
+        // await notifee.displayNotification({
+        //     id: '123',
+        //     title: 'Updated Notification Title',
+        //     body: 'Updated main body content of the notification',
+        //     android: {
+        //         channelId,
+        //     },
+        // });
+    }
+
+    const requestPermission = () => {
+        request(Platform.OS === 'ios' ? PERMISSIONS.IOS.PHOTO_LIBRARY : PERMISSIONS.ANDROID.READ_MEDIA_IMAGES)
+            .then((result) => {
+                // setPermissionResult(result)
+                switch (result) {
+                    case RESULTS.UNAVAILABLE:
+                        console.log('This feature is not available (on this device / in this context)');
+                        break;
+                    case RESULTS.DENIED:
+                        console.log('The permission has not been requested / is denied but requestable');
+                        break;
+                    case RESULTS.LIMITED:
+                        console.log('The permission is limited: some actions are possible');
+                        break;
+                    case RESULTS.GRANTED:
+                        console.log('The permission is granted');
+                        break;
+                    case RESULTS.BLOCKED:
+                        console.log('The permission is denied and not requestable anymore');
+                        break;
+                }
+            })
+            .catch((error) => {
+                console.log({ error });
+            });
+    }
+
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <StatusBar
@@ -82,6 +146,8 @@ function App(): JSX.Element {
             />
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text>Demo</Text>
+                <Button title='Send Local Notification' onPress={onShowNotification} />
+                <Button title='Permission' onPress={requestPermission} />
             </View>
         </SafeAreaView>
     );
